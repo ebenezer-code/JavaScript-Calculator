@@ -1,0 +1,112 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+
+#container {
+    width: auto;
+    height: 700px;
+    background-image: linear-gradient(rgb(218, 192, 42, 32%), rgb(111,100,39 , 76%));
+    margin: 20px auto;
+}
+
+.tn {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fffefec5;
+    text-align: center;
+    padding-top: 5px;
+}
+#calculator__container {
+    width: 320px;
+    height: auto;
+    background-color: #fffefe;
+    margin: auto;
+    position: relative;
+    top: 34px; 
+    border-radius: 5px;
+    box-shadow: -9px 20px 9px 6px rgb(0 0 0 / 20%),
+    10px 15px 11px 10px rgb(0 0 0 / 20%)
+}
+#result-sec {
+    height: 120px;
+}
+#input-sec{
+    height: 420px;
+}
+#history {
+    text-align: right;
+    height: 25px;
+    margin: 10px;
+    padding: 5px 2px;
+    font-size: 23px;
+    color: rgb(213, 193, 157);
+}
+
+#result {
+    text-align: right;
+    height: 50px;
+    margin: 10px 5px;
+    padding: 5px auto;
+    font-size: 30px;
+    color: wheat;
+}
+
+
+.operator, .btn, .empty {
+    width: 60px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+    border-radius: 30%;
+    border-width: 0;
+    background-color: #fffefecd;
+    color: rgba(36, 38, 3, 0.933);
+    font-weight: 800;
+    font-size: 15px;
+    font-family: monospace;
+    cursor: pointer;
+}
+.operator:hover, .btn:hover {
+    font-family: sans-serif;
+    background-color: rgba(247, 244, 238, 0.871);
+    transition: all .5s ease-in-out;
+}
+
+.empty{
+    opacity: 0;
+    pointer-events: none;
+}
+.operator:active, .btn:active , .empty:active{
+    font-size: 25px;
+    transition: .8s all ease-in-out;
+}
+.btn:focus ,.empty:focus{
+    box-shadow: -9px 10px 3px 2px rgb(0 0 0 / 10%);
+    outline: none;
+    transition: all .5s ease-in-out;
+}
+.operator:focus{
+    outline: none;
+}
+button:nth-child(4) {
+    font-size: 30px;
+    background-color: rgba(0, 128, 0, 0.768);
+}
+button:nth-child(8) {
+    font-size: 30px;
+    background-color: rgb(220, 220, 21);
+}
+button:nth-child(12) {
+    font-size: 30px;
+    background-color: rgba(150, 52, 22, 0.768);
+}
+button:nth-child(16) {
+    font-size: 30px;
+    background-color: rgba(38, 66, 118, 0.768);
+}
+button:nth-child(20) {
+    font-size: 30px;
+    background-color: rgba(119, 13, 110, 0.768);
+}
